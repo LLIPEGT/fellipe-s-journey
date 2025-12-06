@@ -5,36 +5,31 @@ const interests = [
   {
     title: "Comidas Favoritas",
     items: ["Empadão 🥧", "Pizza 🍕", "Pudim 🍮"],
-    image: null, // Adicione: "/foto-comida.jpg"
+    image: null,
     description: "Adoro experimentar comidas diferentes e esses são meus favoritos!",
   },
   {
     title: "Hobbies",
     items: ["Jogar futebol ⚽", "Estudar programação 💻", "Assistir filmes 🎬", "Ouvir músicas 🎵"],
-    image: null, // Adicione: "/foto-hobby.jpg"
+    image: null,
     description: "Como passo meu tempo livre quando não estou trabalhando.",
-  },
-  {
-    title: "Meus Sonhos",
-    items: ["Casar 💍", "Ser bem-sucedido 🏆", "Ter filhos 👨‍👩‍👧", "Criar algo novo no mundo ✨", "Orgulhar meus pais ⭐"],
-    image: null, // Adicione: "/foto-sonho.jpg"
-    description: "O que me motiva a acordar todos os dias e dar o meu melhor.",
   },
 ];
 
-const InterestsSection = () => {
+const InteressesPage = () => {
   return (
-    <section className="py-20 px-6 bg-secondary/30">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="section-title text-center">O Que Eu Gosto</h2>
+    <main className="min-h-screen bg-background pt-24 pb-16">
+      <div className="max-w-5xl mx-auto px-6">
+        <h1 className="section-title text-center">O Que Eu Gosto</h1>
+        <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+          Algumas coisas que fazem parte do meu dia a dia e me fazem feliz
+        </p>
         
         <div className="space-y-12">
           {interests.map((interest, index) => (
             <div 
               key={interest.title}
-              className={`grid md:grid-cols-2 gap-8 items-center ${
-                index % 2 === 1 ? "md:flex-row-reverse" : ""
-              }`}
+              className={`grid md:grid-cols-2 gap-8 items-center`}
             >
               {/* Foto */}
               <div className={index % 2 === 1 ? "md:order-2" : ""}>
@@ -57,9 +52,9 @@ const InterestsSection = () => {
               {/* Conteúdo */}
               <div className={index % 2 === 1 ? "md:order-1" : ""}>
                 <div className="card-gradient border border-border rounded-xl p-6">
-                  <h3 className="text-2xl font-display font-semibold text-gradient mb-3">
+                  <h2 className="text-2xl font-display font-semibold text-gradient mb-3">
                     {interest.title}
-                  </h3>
+                  </h2>
                   <p className="text-muted-foreground mb-4">{interest.description}</p>
                   <ul className="space-y-2">
                     {interest.items.map((item) => (
@@ -75,8 +70,8 @@ const InterestsSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default InterestsSection;
+export default InteressesPage;
