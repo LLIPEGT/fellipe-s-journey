@@ -1,17 +1,17 @@
 import { Image } from "lucide-react";
 
-const BiographySection = () => {
+const SobrePage = () => {
   // ALTERE AQUI: Coloque o caminho de uma foto sua
-  const bioImage = null; // Ex: "/foto-biografia.jpg"
+  const bioImage = null;
 
   return (
-    <section id="sobre" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="section-title text-center">Quem Sou Eu</h2>
+    <main className="min-h-screen bg-background pt-24 pb-16">
+      <div className="max-w-5xl mx-auto px-6">
+        <h1 className="section-title text-center">Quem Sou Eu</h1>
         
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Foto */}
-          <div className="order-2 md:order-1">
+          <div>
             <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-secondary">
               {bioImage ? (
                 <img 
@@ -29,9 +29,9 @@ const BiographySection = () => {
           </div>
 
           {/* Texto */}
-          <div className="order-1 md:order-2 space-y-6">
+          <div className="space-y-6">
             <div className="card-gradient border border-border rounded-xl p-6">
-              <h3 className="text-primary font-semibold mb-3">Sobre mim</h3>
+              <h2 className="text-primary font-semibold text-lg mb-3">Sobre mim</h2>
               {/* ALTERE AQUI: Escreva sobre você */}
               <p className="text-foreground/90 leading-relaxed">
                 Gosto de jogar futebol, experimentar comidas diferentes, estudar 
@@ -42,7 +42,7 @@ const BiographySection = () => {
             </div>
 
             <div className="card-gradient border border-border rounded-xl p-6">
-              <h3 className="text-primary font-semibold mb-3">Meu foco atual</h3>
+              <h2 className="text-primary font-semibold text-lg mb-3">Meu foco atual</h2>
               {/* ALTERE AQUI: Seu foco atual */}
               <p className="text-foreground/90 leading-relaxed">
                 Atualmente estou em busca de me encontrar como pessoa e como 
@@ -50,11 +50,37 @@ const BiographySection = () => {
                 entregar os melhores resultados.
               </p>
             </div>
+
+            <div className="card-gradient border border-border rounded-xl p-6">
+              <h2 className="text-primary font-semibold text-lg mb-3">Meus sonhos</h2>
+              <ul className="space-y-2 text-foreground/90">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Casar 💍
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Ser bem-sucedido 🏆
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Ter filhos 👨‍👩‍👧
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Criar algo novo no mundo ✨
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Orgulhar meus pais ⭐
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default BiographySection;
+export default SobrePage;

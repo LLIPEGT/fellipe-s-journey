@@ -10,12 +10,12 @@ const photos = [
   { src: null, caption: "Momento especial 6" },
 ];
 
-const GallerySection = () => {
+const GaleriaPage = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="section-title text-center">Galeria de Momentos</h2>
-        <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">
+    <main className="min-h-screen bg-background pt-24 pb-16">
+      <div className="max-w-5xl mx-auto px-6">
+        <h1 className="section-title text-center">Galeria de Momentos</h1>
+        <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
           Algumas fotos que contam um pouco da minha história
         </p>
         
@@ -32,8 +32,8 @@ const GallerySection = () => {
                     alt={photo.caption} 
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                    <p className="text-foreground text-sm">{photo.caption}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <p className="text-background text-sm">{photo.caption}</p>
                   </div>
                 </div>
               ) : (
@@ -46,8 +46,8 @@ const GallerySection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default GallerySection;
+export default GaleriaPage;
