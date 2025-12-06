@@ -6,42 +6,51 @@
 
 @layer base {
   :root {
-    --background: 40 33% 98%;
-    --foreground: 20 25% 15%;
+    /* Fundo branco e textos escuros */
+    --background: 0 0% 100%;        /* branco */
+    --foreground: 220 25% 15%;      /* azul muito escuro (quase preto) */
 
-    --card: 40 30% 96%;
-    --card-foreground: 20 25% 15%;
+    /* Cards brancos */
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 40 30% 96%;
-    --popover-foreground: 20 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 15 70% 50%;
-    --primary-foreground: 40 33% 98%;
+    /* 🔵 Azul principal */
+    --primary: 215 90% 50%;         /* azul forte */
+    --primary-foreground: 0 0% 100%; /* texto branco */
 
-    --secondary: 35 30% 92%;
-    --secondary-foreground: 20 25% 15%;
+    /* Azul claro para elementos secundários */
+    --secondary: 215 40% 92%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 35 20% 90%;
-    --muted-foreground: 20 15% 45%;
+    /* Tons suaves de azul */
+    --muted: 215 30% 94%;
+    --muted-foreground: 215 20% 40%;
 
-    --accent: 25 80% 55%;
-    --accent-foreground: 40 33% 98%;
+    /* Azul acentuado */
+    --accent: 215 80% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
-    --ring: 15 70% 50%;
+    /* Borda azul bem clara */
+    --border: 215 30% 90%;
+    --input: 215 30% 90%;
+    --ring: 215 90% 50%;
 
     --radius: 0.75rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(15, 70%, 50%), hsl(25, 80%, 55%));
-    --gradient-warm: linear-gradient(180deg, hsl(40, 33%, 98%), hsl(35, 30%, 94%));
-    --gradient-card: linear-gradient(145deg, hsl(40, 30%, 97%), hsl(35, 25%, 94%));
+    /* 🔵 Gradientes azul + branco */
+    --gradient-gold: linear-gradient(135deg, hsl(215 80% 55%), hsl(215 90% 60%));
+    --gradient-warm: linear-gradient(180deg, hsl(0 0% 100%), hsl(215 40% 96%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 30% 96%));
 
-    --shadow-glow: 0 0 60px hsl(15 70% 50% / 0.12);
-    --shadow-card: 0 10px 40px hsl(20 25% 15% / 0.08);
+    /* 🔵 Sombras azuladas suaves */
+    --shadow-glow: 0 0 60px hsl(215 90% 55% / 0.20);
+    --shadow-card: 0 10px 40px hsl(215 20% 20% / 0.06);
   }
 }
 
@@ -62,7 +71,7 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-gold);
+    background-image: var(--gradient-gold); /* agora azul */
   }
 
   .glow {

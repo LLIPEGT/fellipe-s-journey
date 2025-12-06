@@ -1,8 +1,8 @@
 import { Image } from "lucide-react";
+import bioImage from "../img/sobremim.png";
 
 const SobrePage = () => {
   // ALTERE AQUI: Coloque o caminho de uma foto sua
-  const bioImage = null;
 
   return (
     <main className="min-h-screen bg-background pt-24 pb-16">
@@ -46,8 +46,7 @@ const SobrePage = () => {
               {/* ALTERE AQUI: Seu foco atual */}
               <p className="text-foreground/90 leading-relaxed">
                 Atualmente estou em busca de me encontrar como pessoa e como 
-                profissional. Procuro aprender um pouco de tudo e desejo sempre 
-                entregar os melhores resultados.
+                profissional. Procuro aprender um pouco de tudo e estou em busca da efetivação.
               </p>
             </div>
 

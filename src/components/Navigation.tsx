@@ -2,7 +2,7 @@ import { NavLink } from "@/components/NavLink";
 import { Home, User, Heart, Images } from "lucide-react";
 
 const navItems = [
-  { name: "Início", path: "/", icon: Home },
+  { name: "Home", path: "/", icon: Home },
   { name: "Sobre Mim", path: "/sobre", icon: User },
   { name: "Interesses", path: "/interesses", icon: Heart },
   { name: "Galeria", path: "/galeria", icon: Images },
@@ -15,7 +15,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Nome */}
           <NavLink to="/" className="font-display text-xl font-semibold text-gradient">
-            Fellipe
+            QUEM SOU EU
           </NavLink>
 
           {/* Menu */}

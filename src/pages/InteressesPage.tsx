@@ -1,17 +1,19 @@
 import { Image } from "lucide-react";
+import empadao from '../img/empadao.png';
+import jogadorCaro from '../img/jogadorcaro.png';
 
 // ALTERE AQUI: Suas categorias de interesse com fotos
 const interests = [
   {
     title: "Comidas Favoritas",
     items: ["Empadão 🥧", "Pizza 🍕", "Pudim 🍮"],
-    image: null,
+    image: empadao,
     description: "Adoro experimentar comidas diferentes e esses são meus favoritos!",
   },
   {
     title: "Hobbies",
     items: ["Jogar futebol ⚽", "Estudar programação 💻", "Assistir filmes 🎬", "Ouvir músicas 🎵"],
-    image: null,
+    image: jogadorCaro,
     description: "Como passo meu tempo livre quando não estou trabalhando.",
   },
 ];

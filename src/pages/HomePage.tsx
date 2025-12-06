@@ -1,14 +1,15 @@
 import { User } from "lucide-react";
 import { Link } from "react-router-dom";
+import profileImage from "../img/perfil.png";
 
 const HomePage = () => {
   // ALTERE AQUI: Coloque o caminho da sua foto de perfil
-  const profileImage = null;
+
 
   return (
     <main className="min-h-screen bg-background pt-16">
       <section className="min-h-[85vh] flex flex-col items-center justify-center relative px-6 py-20">
-        {/* Decorative background */}
+      
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/15 rounded-full blur-3xl" />
         
@@ -29,12 +30,12 @@ const HomePage = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4">
-            <span className="text-foreground">Fellipe</span>{" "}
-            <span className="text-gradient">Fernandes Nogueira</span>
+            <span className="text-foreground">QUEM</span>{" "}
+            <span className="text-gradient">SOU EU</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
-            Em busca de me encontrar como pessoa e como profissional.
+            Venham conhecer um pouco sobre mim.
           </p>
 
           {/* Botões de navegação */}
@@ -58,7 +59,7 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-border text-center">
         <p className="text-muted-foreground">
-          © {new Date().getFullYear()} Fellipe Fernandes Nogueira
+          © {new Date().getFullYear()} Fellipe Fernandes
         </p>
       </footer>
     </main>
