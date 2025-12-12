@@ -1,10 +1,9 @@
 import { User } from "lucide-react";
 import { Link } from "react-router-dom";
-import profileImage from "../img/perfil.png";
 
 const HomePage = () => {
   // ALTERE AQUI: Coloque o caminho da sua foto de perfil
-
+  const profileImage = null;
 
   return (
     <main className="min-h-screen bg-background pt-16">
@@ -56,12 +55,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-6 border-t border-border text-center">
-        <p className="text-muted-foreground">
-          © {new Date().getFullYear()} Fellipe Fernandes
-        </p>
-      </footer>
     </main>
   );
 };

@@ -9,6 +9,7 @@ import SobrePage from "./pages/SobrePage";
 import InteressesPage from "./pages/InteressesPage";
 import GaleriaPage from "./pages/GaleriaPage";
 import NotFound from "./pages/NotFound";
+import Footer from "../src/pages/Footer";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/galeria" element={<GaleriaPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

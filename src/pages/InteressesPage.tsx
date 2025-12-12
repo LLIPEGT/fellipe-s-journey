@@ -72,6 +72,7 @@ const InteressesPage = () => {
           ))}
         </div>
       </div>
+      
     </main>
   );
 };
